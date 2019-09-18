@@ -1,0 +1,44 @@
+body {
+  margin: 4em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fAA275;
+  align-items: baseline;
+  border-radius: 10px;
+}
+
+.navbar > h1 {
+  margin: 0;
+}
+
+.navbar > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 0px 20px;
+}
+
+.navbar a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar .title {
+  color: #3b1502;
+}
+
+/*# sourceMappingURL=navbars.css.map */

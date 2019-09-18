@@ -1,0 +1,54 @@
+// use flexbox
+
+// top sticky navbar
+    // left logo, right logo, center logo
+    // left nav list items, right items, center items
+    // responsive? hamburger icon/dropdown?
+    // hover effects
+
+// bg transparent, bg none, bg light, bg dark
+// left sticky navbar
+    // top logo, bottom logo
+    // nav list styles
+body {
+    margin: 4em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fAA275;
+    align-items: baseline;
+    border-radius: 10px;
+}
+
+.navbar > h1 {
+    margin: 0;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0px 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .title {
+    color: darken(#fAA275, 60%);
+}
