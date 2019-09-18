@@ -1,6 +1,11 @@
 // variables
-$theme-color-light : #FAE1DE;
+$theme-text-color: black;
+$theme-color-light: #FAE1DE;
+$theme-bg-color: darken(white, 1%);
 
+body {
+    background: $theme-bg-color;
+}
 // styles
 h1, h2, h3, h4, h5, h6 {
     font-family: Verdana;
@@ -9,13 +14,18 @@ h1, h2, h3, h4, h5, h6 {
 // lighten heading font colors
 @for $i from 1 through 6 {
     h#{$i} {
-      color: #{lighten(black, 10% * $i)};
+      color: #{lighten($theme-text-color, 10% * $i)};
     }
 }
 
 body {
     font-family: Georgia;
     margin: 40px 0px;
+    letter-spacing: 0.5px;
+}
+
+p {
+    line-height: 25px;
 }
 
 mark {
@@ -33,4 +43,15 @@ a:hover {
 
 a:visited {
     color: #{darken($theme-color-light, 65%)}
+}
+
+code {
+    font-weight: 560;
+}
+pre code {
+    position: relative;
+    left: 10%;
+}
+pre {
+    background-color: #{lighten($theme-color-light, 5%)};
 }

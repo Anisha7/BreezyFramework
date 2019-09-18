@@ -1,3 +1,7 @@
+body {
+  background: #fcfcfc;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Verdana;
 }
@@ -29,6 +33,11 @@ h6 {
 body {
   font-family: Georgia;
   margin: 40px 0px;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 25px;
 }
 
 mark {
@@ -46,6 +55,19 @@ a:hover {
 
 a:visited {
   color: #7a1e12;
+}
+
+code {
+  font-weight: 560;
+}
+
+pre code {
+  position: relative;
+  left: 10%;
+}
+
+pre {
+  background-color: #fdf5f4;
 }
 
 /*# sourceMappingURL=sampleStyles.css.map */
