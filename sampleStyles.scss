@@ -1,0 +1,18 @@
+// variables
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana;
+}
+
+// lighten heading font colors
+@for $i from 1 through 6 {
+    h#{$i} {
+      color: #{lighten(black, 10% * $i)};
+    }
+}
+
+body {
+    font-family: Georgia;
+    margin: 40px 0px;
+}
