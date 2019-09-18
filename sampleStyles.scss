@@ -1,3 +1,4 @@
+// THEME: dark text on light background
 // variables
 $theme-text-color: black;
 $theme-color-light: #FAE1DE;
@@ -112,3 +113,6 @@ hr {
 }
 
 // muted text
+.text-muted {
+    color: lighten($theme-text-color, 60% )
+}
