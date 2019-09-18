@@ -31,4 +31,21 @@ body {
   margin: 40px 0px;
 }
 
+mark {
+  background: #FAE1DE;
+  padding: 2px;
+}
+
+a {
+  color: #bc2e1d;
+}
+
+a:hover {
+  color: #e66859;
+}
+
+a:visited {
+  color: #7a1e12;
+}
+
 /*# sourceMappingURL=sampleStyles.css.map */

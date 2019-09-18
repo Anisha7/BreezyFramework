@@ -1,6 +1,7 @@
 // variables
+$theme-color-light : #FAE1DE;
 
-
+// styles
 h1, h2, h3, h4, h5, h6 {
     font-family: Verdana;
 }
@@ -15,4 +16,21 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: Georgia;
     margin: 40px 0px;
+}
+
+mark {
+    background: $theme-color-light;
+    padding: 2px;
+}
+
+a {
+    color: #{darken($theme-color-light, 50%)}
+}
+
+a:hover {
+    color: #{darken($theme-color-light, 30%)}
+}
+
+a:visited {
+    color: #{darken($theme-color-light, 65%)}
 }
