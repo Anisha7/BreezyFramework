@@ -1,0 +1,127 @@
+body {
+  font-family: Georgia;
+  margin: 40px 0px;
+  letter-spacing: 0.5px;
+  background: #fcfcfc;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana;
+}
+
+h1 {
+  color: #1a1a1a;
+}
+
+h2 {
+  color: #333333;
+}
+
+h3 {
+  color: #4d4d4d;
+}
+
+h4 {
+  color: #666666;
+}
+
+h5 {
+  color: gray;
+}
+
+h6 {
+  color: #999999;
+}
+
+p {
+  line-height: 25px;
+}
+
+a {
+  color: #bc2e1d;
+}
+
+a:hover, a:active {
+  color: #e66859;
+}
+
+a:visited:hover, a:visited:active {
+  color: #bc2e1d;
+}
+
+a:visited {
+  color: #7a1e12;
+}
+
+code {
+  font-weight: 560;
+}
+
+pre code {
+  position: relative;
+  left: 10%;
+}
+
+pre {
+  background-color: #fdf5f4;
+}
+
+strong {
+  color: black;
+  text-shadow: 0.8px 0 black;
+  letter-spacing: 1px;
+}
+
+em {
+  font-family: Georgia cursive;
+}
+
+abbr {
+  font-weight: lighter;
+  letter-spacing: 0.8px;
+}
+
+del {
+  font-style: italic;
+  font-family: Georgia cursive;
+}
+
+mark {
+  background: #FAE1DE;
+  padding: 2px;
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+  margin: 30px;
+}
+
+hr {
+  border: none;
+  border-top: 5px dotted #4d4d4d;
+  margin: 0px 50%;
+  width: 25px;
+}
+
+.lead {
+  font-weight: 600;
+}
+
+.lead::first-letter {
+  font-size: 3.5em;
+  float: left;
+  margin-top: 0.2em;
+  margin-right: 0.15em;
+}
+
+.text-muted {
+  color: #999999;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*# sourceMappingURL=lightsample.css.map */

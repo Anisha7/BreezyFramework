@@ -2,8 +2,8 @@ body {
   font-family: Georgia;
   margin: 40px 0px;
   letter-spacing: 0.5px;
-  background: #fcfcfc;
-  color: #1a1a1a;
+  background: black;
+  color: #e6e6e6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,19 +11,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: #1a1a1a;
+  color: #e6e6e6;
 }
 
 h2 {
-  color: #333333;
+  color: #cccccc;
 }
 
 h3 {
-  color: #4d4d4d;
+  color: #b3b3b3;
 }
 
 h4 {
-  color: #666666;
+  color: #999999;
 }
 
 h5 {
@@ -31,7 +31,7 @@ h5 {
 }
 
 h6 {
-  color: #999999;
+  color: #666666;
 }
 
 p {
@@ -39,19 +39,19 @@ p {
 }
 
 a {
-  color: #bc2e1d;
-}
-
-a:hover, a:active {
   color: #e66859;
 }
 
-a:visited:hover, a:visited:active {
+a:hover, a:active {
   color: #bc2e1d;
 }
 
+a:visited:hover, a:visited:active {
+  color: #e66859;
+}
+
 a:visited {
-  color: #7a1e12;
+  color: #f0a59c;
 }
 
 code {
@@ -64,12 +64,12 @@ pre code {
 }
 
 pre {
-  background-color: #fdf5f4;
+  background-color: #210805;
 }
 
 strong {
-  color: black;
-  text-shadow: 0.8px 0 black;
+  color: white;
+  text-shadow: 0.8px 0 white;
   letter-spacing: 1px;
 }
 
@@ -88,8 +88,9 @@ del {
 }
 
 mark {
-  background: #FAE1DE;
+  background: #380d08;
   padding: 2px;
+  color: #e6e6e6;
 }
 
 blockquote {
@@ -100,7 +101,7 @@ blockquote {
 
 hr {
   border: none;
-  border-top: 5px dotted #4d4d4d;
+  border-top: 5px dotted #b3b3b3;
   margin: 0px 50%;
   width: 25px;
 }
@@ -117,7 +118,11 @@ hr {
 }
 
 .text-muted {
-  color: #999999;
+  color: white;
 }
 
-/*# sourceMappingURL=sampleStyles.css.map */
+.text-center {
+  text-align: center;
+}
+
+/*# sourceMappingURL=darksample.css.map */

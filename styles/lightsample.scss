@@ -116,3 +116,8 @@ hr {
 .text-muted {
     color: lighten($theme-text-color, 60% )
 }
+
+// center text
+.text-center {
+    text-align: center;
+}
