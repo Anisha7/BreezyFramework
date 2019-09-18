@@ -105,4 +105,15 @@ hr {
   width: 25px;
 }
 
+.lead {
+  font-weight: 600;
+}
+
+.lead::first-letter {
+  font-size: 3.5em;
+  float: left;
+  margin-top: 0.2em;
+  margin-right: 0.15em;
+}
+
 /*# sourceMappingURL=sampleStyles.css.map */
