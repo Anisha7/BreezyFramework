@@ -87,10 +87,18 @@ mark {
     padding: 2px;
 }
 
-// blockquotes
+blockquote {
+    text-align: center;
+    font-style: italic;
+    margin: 30px;
+}
 
-// divider
-
+hr {
+    border: none;
+    border-top: 5px dotted lighten($theme-text-color, 30% );
+    margin: 0px 50%;
+    width: 25px;
+}
 // lead
 
 // muted text
