@@ -84,7 +84,7 @@ del {
 }
 
 mark {
-    background: $theme-color-light;
+    background: #{lighten($theme-color-light, 8%)};
     padding: 2px;
     color: #{darken($theme-text-color, 10% )};
 }
