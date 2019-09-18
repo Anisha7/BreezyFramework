@@ -1,0 +1,22 @@
+
+body {
+    margin: 4em;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fAA275;
+    border-radius: 10px;
+    line-height: 1.5em;
+    padding: 1em;
+}
+
+.page-footer h3 {
+    color: darken(#fAA275, 60%);
+    margin: 0 0 1em 0;
+}
+
+.page-footer > ul {
+    list-style-type: none;
+}
