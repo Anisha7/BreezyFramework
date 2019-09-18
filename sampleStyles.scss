@@ -2,18 +2,21 @@
 $theme-text-color: black;
 $theme-color-light: #FAE1DE;
 $theme-bg-color: darken(white, 1%);
+$text-font-family: Georgia;
+$heading-font-family: Verdana;
 
 // styles
 // main
 body {
-    font-family: Georgia;
+    font-family: $text-font-family;
     margin: 40px 0px;
     letter-spacing: 0.5px;
     background: $theme-bg-color;
+    color: #{lighten($theme-text-color, 10% )};
 }
 // headings
 h1, h2, h3, h4, h5, h6 {
-    font-family: Verdana;
+    font-family: $heading-font-family;
 }
 
 // lighten heading font colors
@@ -28,20 +31,19 @@ p {
     line-height: 25px;
 }
 
-// highlighted text
-mark {
-    background: $theme-color-light;
-    padding: 2px;
-}
-
 // links
 a {
     color: #{darken($theme-color-light, 50%)}
 }
 
-a:hover {
+a:hover, a:active {
     color: #{darken($theme-color-light, 30%)}
 }
+
+a:visited:hover, a:visited:active {
+    color: #{darken($theme-color-light, 50%)}
+}
+
 
 a:visited {
     color: #{darken($theme-color-light, 65%)}
@@ -59,4 +61,28 @@ pre {
     background-color: #{lighten($theme-color-light, 5%)};
 }
 
-// inline elements
+// inline elements: strong, em, abbr, del, s, mark, 
+strong {
+    color:$theme-text-color;
+    text-shadow: 0.8px 0 #{$theme-text-color};
+    letter-spacing:1px;
+}
+
+em {
+    font-family: $text-font-family cursive;
+}
+
+abbr {
+    font-weight: lighter;
+    letter-spacing: 0.8px;
+}
+
+del {
+    font-style: italic;
+    font-family: $text-font-family cursive;
+}
+
+mark {
+    background: $theme-color-light;
+    padding: 2px;
+}
