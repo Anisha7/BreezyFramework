@@ -1,4 +1,7 @@
 body {
+  font-family: Georgia;
+  margin: 40px 0px;
+  letter-spacing: 0.5px;
   background: #fcfcfc;
 }
 
@@ -28,12 +31,6 @@ h5 {
 
 h6 {
   color: #999999;
-}
-
-body {
-  font-family: Georgia;
-  margin: 40px 0px;
-  letter-spacing: 0.5px;
 }
 
 p {

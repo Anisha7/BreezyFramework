@@ -3,10 +3,15 @@ $theme-text-color: black;
 $theme-color-light: #FAE1DE;
 $theme-bg-color: darken(white, 1%);
 
+// styles
+// main
 body {
+    font-family: Georgia;
+    margin: 40px 0px;
+    letter-spacing: 0.5px;
     background: $theme-bg-color;
 }
-// styles
+// headings
 h1, h2, h3, h4, h5, h6 {
     font-family: Verdana;
 }
@@ -18,21 +23,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-body {
-    font-family: Georgia;
-    margin: 40px 0px;
-    letter-spacing: 0.5px;
-}
-
+// body text
 p {
     line-height: 25px;
 }
 
+// highlighted text
 mark {
     background: $theme-color-light;
     padding: 2px;
 }
 
+// links
 a {
     color: #{darken($theme-color-light, 50%)}
 }
@@ -45,6 +47,7 @@ a:visited {
     color: #{darken($theme-color-light, 65%)}
 }
 
+// code blocks
 code {
     font-weight: 560;
 }
@@ -55,3 +58,5 @@ pre code {
 pre {
     background-color: #{lighten($theme-color-light, 5%)};
 }
+
+// inline elements
