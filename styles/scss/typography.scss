@@ -1,0 +1,114 @@
+body {
+    font-family: var(--text-font-family);
+    margin: 40px 0px;
+    letter-spacing: 0.5px;
+    background: var(--theme-bg-color);
+    color: var(--theme-text-color-1);
+}
+// headings
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+}
+
+// TODO: prevent size degrading after h4
+
+// body text
+p {
+    line-height: 25px;
+}
+
+// links
+a {
+    // color: #{map-get(var(--theme-color-light-map), "theme-color-light-5")};
+    color: var(--theme-color-light-5);
+}
+
+a:hover, a:active {
+    // color: #{map-get(var(--theme-color-light-map), "theme-color-light-3")};
+    color: var(--theme-color-light-3);
+}
+
+a:visited:hover, a:visited:active {
+    // color: #{map-get(var(--theme-color-light-map), "theme-color-light-5")};
+    color: var(--theme-color-light-5);
+}
+
+
+a:visited {
+    // color: #{map-get(var(--theme-color-light-map), "theme-color-light-7")};
+    color: var(--theme-color-light-7);
+}
+
+// code blocks
+code {
+    font-weight: 560;
+}
+pre code {
+    position: relative;
+    left: 10%;
+}
+pre {
+    background-color: var(--theme-color-lighter);
+}
+
+// inline elements: strong, em, abbr, del, s, mark, 
+strong {
+    color: var(--theme-text-color);
+    text-shadow: 0.8px 0 #{var(--theme-text-color)};
+    letter-spacing:1px;
+}
+
+em {
+    font-family: var(--text-font-family) cursive;
+}
+
+abbr {
+    font-weight: lighter;
+    letter-spacing: 0.8px;
+}
+
+del {
+    font-style: italic;
+    font-family: var(--text-font-family) cursive;
+}
+
+mark {
+    background: var(--theme-color-light);
+    padding: 2px;
+    color: var(--theme-text-color-1);
+}
+
+blockquote {
+    text-align: center;
+    font-style: italic;
+    margin: 30px;
+}
+
+hr {
+    border: none;
+    // border-top: 5px dotted #{map-get(var(--theme-text-color-map), "theme-text-color-3")};
+    border-top: 5px dotted var(--theme-text-color-3);
+    margin: 0px 50%;
+    width: 25px;
+}
+
+.lead {
+    font-weight: 600;
+}
+
+.lead::first-letter {
+    font-size: 3.5em;
+    float: left;
+    margin-top: 0.20em;
+    margin-right: 0.15em;
+}
+
+// muted text
+.text-muted {
+    color: var(--theme-text-color-6);
+}
+
+// center text
+.text-center {
+    text-align: center;
+}

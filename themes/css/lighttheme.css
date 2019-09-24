@@ -1,0 +1,50 @@
+h1 {
+  color: #1a1a1a;
+}
+
+h2 {
+  color: #333333;
+}
+
+h3 {
+  color: #4d4d4d;
+}
+
+h4 {
+  color: #666666;
+}
+
+h5 {
+  color: gray;
+}
+
+h6 {
+  color: #999999;
+}
+
+:root {
+  --theme-text-color-i: black;
+  --theme-text-color-i: #1a1a1a;
+  --theme-text-color-i: #333333;
+  --theme-text-color-i: #4d4d4d;
+  --theme-text-color-i: #666666;
+  --theme-text-color-i: gray;
+  --theme-text-color-i: #999999;
+  --theme-color-light-i: #fae1de;
+  --theme-color-light-i: #f3b9b2;
+  --theme-color-light-i: #ed9085;
+  --theme-color-light-i: #e66859;
+  --theme-color-light-i: #df402d;
+  --theme-color-light-i: #bc2e1d;
+  --theme-color-light-i: #902316;
+  --theme-text-color: black;
+  --theme-color-light: #FAE1DE;
+  --theme-color-lighter: #fdf5f4;
+  --theme-bg-color: #fcfcfc;
+  --text-font-family: Georgia;
+  --heading-font-family: Verdana;
+  --text-font-family: Georgia;
+  --heading-font-family: Verdana;
+}
+
+/*# sourceMappingURL=lighttheme.css.map */

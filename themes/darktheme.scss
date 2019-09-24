@@ -1,0 +1,31 @@
+$theme-text-color: white;
+$theme-color-light: darken(#FAE1DE, 80%);
+$theme-color-lighter: #{lighten($theme-color-light, 5%)};
+$theme-bg-color: lighten(black, 10%);
+$text-font-family: Georgia;
+$heading-font-family: Verdana;
+
+// lighten heading font colors
+@for $i from 1 through 6 {
+    h#{$i} {
+    color: #{darken($theme-text-color, 10% * $i)};
+    }
+}
+:root {
+    @for $i from 0 through 6 {
+        --theme-text-color-#{$i} : #{darken($theme-text-color, 10% * $i)};
+    };
+    
+    @for $i from 0 through 6 {
+        --theme-color-light-#{$i}: #{lighten($theme-color-light, 10% * $i)};
+    };
+
+    --theme-text-color: #{$theme-text-color};
+    --theme-color-light: #{$theme-color-light};
+    --theme-color-lighter: #{$theme-color-lighter};
+    --theme-bg-color: #{$theme-bg-color};
+    --text-font-family: #{$text-font-family};
+    --heading-font-family: #{$heading-font-family};
+    --text-font-family: Georgia;
+    --heading-font-family: Verdana;
+}

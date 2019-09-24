@@ -1,0 +1,50 @@
+h1 {
+  color: #e6e6e6;
+}
+
+h2 {
+  color: #cccccc;
+}
+
+h3 {
+  color: #b3b3b3;
+}
+
+h4 {
+  color: #999999;
+}
+
+h5 {
+  color: gray;
+}
+
+h6 {
+  color: #666666;
+}
+
+:root {
+  --theme-text-color-0: white;
+  --theme-text-color-1: #e6e6e6;
+  --theme-text-color-2: #cccccc;
+  --theme-text-color-3: #b3b3b3;
+  --theme-text-color-4: #999999;
+  --theme-text-color-5: gray;
+  --theme-text-color-6: #666666;
+  --theme-color-light-0: #380d08;
+  --theme-color-light-1: #64180f;
+  --theme-color-light-2: #902316;
+  --theme-color-light-3: #bc2e1d;
+  --theme-color-light-4: #df402d;
+  --theme-color-light-5: #e66859;
+  --theme-color-light-6: #ed9085;
+  --theme-text-color: white;
+  --theme-color-light: #380d08;
+  --theme-color-lighter: #4e130c;
+  --theme-bg-color: #1a1a1a;
+  --text-font-family: Georgia;
+  --heading-font-family: Verdana;
+  --text-font-family: Georgia;
+  --heading-font-family: Verdana;
+}
+
+/*# sourceMappingURL=darktheme.css.map */
