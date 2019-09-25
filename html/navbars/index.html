@@ -6,25 +6,58 @@
     <link rel="stylesheet" type="text/css" href="../../styles/css/navbars.css" />
   </head>
   <body>
-    <div class="navbar">
-        <ul>
-            <li><h1 class="title">Breezy Navbars</h1></li>
-            <li><a href="#colors">Colors</a></li>
-            <li><a href="#navbar">Navbar</a></li>
-            <li><a href="#headings">Headings</a></li>
-            <li><a href="#type">Type</a></li>
-            <li><a href="#forms">forms</a>
-            <li><a href="#footer">Footer</a></li>
-        </ul>
-        
-        <ul>
-            <li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
-        </ul>
+    <div class="content-box">
+      <div class="navbar">
+          <ul>
+              <li><h1 class="title">Breezy Navbars</h1></li>
+              <li><a href="#colors">Colors</a></li>
+              <li><a href="#navbar">Navbar</a></li>
+              <li><a href="#headings">Headings</a></li>
+              <li><a href="#type">Type</a></li>
+              <li><a href="#forms">forms</a>
+              <li><a href="#footer">Footer</a></li>
+          </ul>
+          
+          <ul>
+              <li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
+          </ul>
+      </div>
     </div>
-    <!-- <div style="width: 600px; margin: auto;" class="text-center"> 
-        <h1>Breezy Navbars</h1>
-        <hr />
-        
-    </div> -->
+
+    <div class="content-box">
+      <div class="navbar centeralign">
+          <ul>
+              <li><a href="#colors">Colors</a></li>
+              <li><a href="#navbar">Navbar</a></li>
+              <li><a href="#headings">Headings</a></li>
+              <li><h1 class="title">Breezy Navbars</h1></li>
+              <li><a href="#type">Type</a></li>
+              <li><a href="#forms">forms</a>
+              <li><a href="#footer">Footer</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="container">
+        <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+        <input id="toggle" type="checkbox">
+    
+        <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+    
+        <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+        <label class="toggle-container" for="toggle">
+            <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+            <span class="button button-toggle"></span>
+        </label>
+    
+        <!-- The nav menu -->
+        <nav class="nav">
+            <a class="nav-item" href="">Dashboard</a>
+            <a class="nav-item" href="">History</a>
+            <a class="nav-item" href="">Statistics</a>
+            <a class="nav-item" href="">Settings</a>
+        </nav>
+    
+    </div>
   </body>
 </html>

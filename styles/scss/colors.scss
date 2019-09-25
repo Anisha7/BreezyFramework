@@ -3,4 +3,13 @@
 
 // bg-colors (navbars/footers)
 
+.white {
+    background-color: white;
+    color: lighten(black, 10%);
+}
+
+.orange {
+    background-color: #fAA275;
+    color: darken(#fAA275, 60%);
+}
 // text-colors 
