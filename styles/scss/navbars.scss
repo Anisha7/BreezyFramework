@@ -17,7 +17,7 @@ body {
 }
 
 .content-box {
-    margin: 100px;
+    margin: 0px 50px 50px;
 }
 
 // navbar styles
@@ -76,12 +76,22 @@ body {
     border-bottom-left-radius: 800%;
     border-bottom-right-radius: 800%;
     align-items: flex-start;
-  }
+}
 
-  .topcurve.topcurve {
+.topcurve.topcurve {
     height: 100px;
     width: 100%;
     border-top-left-radius: 800%;
     border-top-right-radius: 800%;
     align-items: flex-end;
-  }
+}
+
+  @media (max-width: 1024px) {
+    // TODO: change title size
+    // TODO: change nav organization to vertical instead of horizontal
+    
+    // FUTURE TODO: 
+        //Show hamburger button (checkbox type) and hide content
+        // IF CLICKED: show X button and content
+        // IF X is clicked: uncheck hamburger (checkbox type) and hide content
+}
