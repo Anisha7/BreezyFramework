@@ -11,4 +11,11 @@ https://github.com/Make-School-Courses/FEW-2.2-Web-Design-And-Advanced-CSS/blob/
 
 https://github.com/Make-School-Courses/FEW-2.2-Web-Design-And-Advanced-CSS/blob/master/Assignments/assignment-07-layout.md (navbars & footers)
 
+https://github.com/Make-School-Courses/FEW-2.2-Web-Design-And-Advanced-CSS/blob/master/Assignments/assignment-09.md
 
+
+TODO:
+- convert navbars to a component. Use custom props for specifying what style of navbar to use, and a color prop for color definitions. 
+- convert footers to a component. Use custom props for specifying what style of navbar to use, and a color prop for color definitions. 
+- create a styled form web component.
+- convert dark/light typography+page layouts into web component wrappers if possible. 
