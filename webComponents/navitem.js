@@ -1,64 +1,61 @@
-import { thisTypeAnnotation } from "babel-types";
-
-// Start with an anonymous function
 
 (function() {
     // Make a new Component
     // Choose an element to extend, usually HTMLElement
-    class webComponentBase extends HTMLElement {
+    class navItem extends HTMLElement {
       constructor() {
         super(); // MUST call super!
+        // variables
+        this._logo = false // does this need logo styles
+
         // Attach a shadow root to the element.
         this._shadowRoot = this.attachShadow({ mode: 'open' });
-        this._navItemEl = document.createElement('ul')
-        
-        this._title = ''
-        this._src = ''
-        this._logo = false // does this need logo styles
-        this._shadowRoot.appendChild(this._navItemEl)
-
-        this._listEl = document.createElement('li')
+        this._navItemEl = document.createElement('li')
+        // link element
+        this._textEl = document.createElement('a')
         if (this._logo == true) {
-            // append h1 tag instead of (or inside??) the 'a' tag
+            this._textEl = document.createElement('h1')
         }
-        this._listLinkEl = document.createElement('a')
+        this._textEl.innerHTML = this.innerHTML
+        this._navItemEl.appendChild(this._textEl)
+        this._shadowRoot.appendChild(this._navItemEl)
 
         this.render()
       }
       
       _style() {
-        this._listLinkEl.style.display = 'block';
-        this._listLinkEl.style.padding = '1em';
-        this._listLinkEl.style.textDecoration = 'none';
-        this._listLinkEl.style.fontWeight = '600';
-        this._listLinkEl.onmouseover = () => {
-            this._listLinkEl.style.textDecoration = 'underline';
+        this._textEl.style.display = 'block';
+        this._textEl.style.padding = '1em';
+        this._textEl.style.textDecoration = 'none';
+        this._textEl.style.fontWeight = '600';
+        this._textEl.onmouseover = () => {
+            this._textEl.style.textDecoration = 'underline';
+        }
+
+        if (this._logo == true) {
+          this._textEl.style.margin = 0;
+          this._textEl.style.color = LightenDarkenColor("#fAA275", 60);
         }
         
       }
 
       // Defines the attributes accessible to JS
       static get observedAttributes() {
-        return ['title', 'src', 'logo'] // List an array of attribute names
+        return ['src', 'logo'] // List an array of attribute names
       }
   
       // Handle changes to an attribute
       attributeChangedCallback(attributeName, oldValue, newValue) {
-        // use switch() {case: code, break} 
         switch(attributeName) {
-            case 'title':
-                this._title = newValue
-                break
             case 'src':
-                this._src = newValue
+                this._textEl.href = newValue
                 break
             case 'logo':
                 this._logo = newValue.toLowerCase()  == 'true'
+                const text = this._textEl.innerHTML
+                this._textEl =  this._logo ? document.createElement('h1') : this._textEl
+                this._textEl = text
                 break
-        }
-        if (attributeName === '???') {
-          // handle changes to an attribute
-  
         }
       }
   
@@ -72,17 +69,8 @@ import { thisTypeAnnotation } from "babel-types";
       }
     }
   
-    customElements.define('hello-world', webComponentBase);
+    customElements.define('nav-item', navItem);
     // ---------
   
   
   })()
-  
-  
-  // NOTE:
-  // if making navbar: Array.from(document.querySelectorAll('nav-item'))
-  // <nav-bar> 
-  //    <nav-item>
-  //    </nav-item>
-  // </nav-bar>
-  

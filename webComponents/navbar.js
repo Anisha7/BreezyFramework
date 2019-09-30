@@ -1,51 +1,50 @@
-import './navitem.js';
 
 (function() {
     // Make a new Component
     // Choose an element to extend, usually HTMLElement
-    class webComponentBase extends HTMLElement {
+    class navbar extends HTMLElement {
       constructor() {
         super(); // MUST call super!
         // Attach a shadow root to the element.
         this._shadowRoot = this.attachShadow({ mode: 'open' });
-
         this._navEl = document.createElement('div')
-        // append ul element to this._navEl
-        // append ul styles
+        // ul styled for list elems
         this._navUl = document.createElement('ul')
-
+        this._navUl.innerHTML = this.innerHTML
         this._centerAlign = false
         this._color = 'white'
-        this._data = [] // store tuples (nav item name, link)
         this._curve = '' // bottom, top
 
-        this.render()
+        this.render() // render styles
 
+        this._navEl.appendChild(this._navUl)
         this._shadowRoot.appendChild(this._navEl)
       }
   
       // Defines the attributes accessible to JS
       static get observedAttributes() {
-        return ['centerAlign', 'color','data', 'curve'] // List an array of attribute names
+        return ['centerAlign', 'color','curve'] // List an array of attribute names
       }
 
       // append styles to item
       _styleNav() {
         //   styles for default navbar
-        //   this._navEl.style
         this._navEl.style.display = 'flex';
         this._navEl.style.flexDirection = 'row';
         this._navEl.style.justifyContent = 'space-between';
         this._navEl.style.alignItems = 'center';
         this._navEl.style.backgroundColor = this._color;
         this._navEl.style.alignItems = 'baseline';
-        this._navEl.style.borderRadius = '10px';
-        this._navEl.style.color = LightenDarkenColor(this._color, 20);
+        this._navEl.style.borderRadius = this._color; // TODO: lighten 20%
+        this._navEl.style.color = "red";
+        // use hsl(hue, saturation, lightness)?
+        // ex. hsl(${i*step}, 100%, 50%) would create a rainbow in a for loop
+        // this._navEl.style.color = LightenDarkenColor(this._color, 20);
         // Align center styles
         if (this._centerAlign === true) {
             this._navEl.style.justifyContent = 'center !important';
         }
-
+        // create a bottom curve
         if (this._curve === 'bottom') {
             this._navEl.style.height = '100px !important';
             this._navEl.style.width = '100% !important';
@@ -53,7 +52,7 @@ import './navitem.js';
             this._navEl.style.borderBottomRightERdius = '800% !important';
             this._navEl.style.alignItems = flex-start;
         }
-
+        // create a top curve
         if (this._curve === 'top') {
             this._navEl.style.height = '100px !important';
             this._navEl.style.width = '100% !important';
@@ -63,6 +62,7 @@ import './navitem.js';
         }
       }
 
+      // style the ul element
       _styleUl() {
         this._navUl.style.listStyleType = 'none';
         this._navUl.style.padding = '0';
@@ -71,23 +71,23 @@ import './navitem.js';
         this._navUl.style.flexDirection = 'row';
         this._navUl.style.alignItems = 'baseline';
         this._navUl.style.padding = '0px 20px';
+        this._navUl.style.color = 'red';
       }
 
       // Handle changes to an attribute
       attributeChangedCallback(attributeName, oldValue, newValue) {
         switch (attributeName) {
-            case 'data':
-                // TODO: remove attr.
-                this._data = JSON.parse(newValue)
-                break
             case 'centerAlign':
                 this._centerAlign = newValue.toLowerCase() == 'true'
+                this.render()
                 break
             case 'color':
                 this._color = newValue
+                this.render()
                 break
             case 'curve':
                 this._curve = newValue.toLowerCase()
+                this.render()
                 break
         }
       }
@@ -104,7 +104,7 @@ import './navitem.js';
       }
     }
   
-    customElements.define('hello-world', webComponentBase);
+    customElements.define('nav-bar', navbar);
     // ---------
   
   
