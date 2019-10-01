@@ -23,7 +23,7 @@
   
       // Defines the attributes accessible to JS
       static get observedAttributes() {
-        return ['centerAlign', 'color','curve'] // List an array of attribute names
+        return ['center-align', 'color','curve'] // List an array of attribute names
       }
 
       // append styles to item
@@ -42,23 +42,23 @@
         // this._navEl.style.color = LightenDarkenColor(this._color, 20);
         // Align center styles
         if (this._centerAlign === true) {
-            this._navEl.style.justifyContent = 'center !important';
+            this._navEl.style.justifyContent = 'center';
         }
         // create a bottom curve
         if (this._curve === 'bottom') {
-            this._navEl.style.height = '100px !important';
-            this._navEl.style.width = '100% !important';
-            this._navEl.style.borderBottomLeftRadius = '800% !important';
-            this._navEl.style.borderBottomRightERdius = '800% !important';
-            this._navEl.style.alignItems = flex-start;
+            this._navEl.style.height = '100px';
+            this._navEl.style.width = '100%';
+            this._navEl.style.borderBottomLeftRadius = '800%';
+            this._navEl.style.borderBottomRightRadius = '800%';
+            this._navEl.style.alignItems = 'flex-start';
         }
         // create a top curve
         if (this._curve === 'top') {
-            this._navEl.style.height = '100px !important';
-            this._navEl.style.width = '100% !important';
-            this._navEl.style.borderTopLeftRadius = '800% !important';
-            this._navEl.style.borderTopRightRadius = '800% !important';
-            this._navEl.style.alignItems = 'flex-end !important';
+            this._navEl.style.height = '100px';
+            this._navEl.style.width = '100%';
+            this._navEl.style.borderTopLeftRadius = '800%';
+            this._navEl.style.borderTopRightRadius = '800%';
+            this._navEl.style.alignItems = 'flex-end';
         }
       }
 
@@ -71,14 +71,13 @@
         this._navUl.style.flexDirection = 'row';
         this._navUl.style.alignItems = 'baseline';
         this._navUl.style.padding = '0px 20px';
-        this._navUl.style.color = 'red';
       }
 
       // Handle changes to an attribute
       attributeChangedCallback(attributeName, oldValue, newValue) {
         switch (attributeName) {
-            case 'centerAlign':
-                this._centerAlign = newValue.toLowerCase() == 'true'
+            case 'center-align':
+                this._centerAlign = newValue.toLowerCase() === 'true'
                 this.render()
                 break
             case 'color':
@@ -109,12 +108,3 @@
   
   
   })()
-  
-  
-  // NOTE:
-  // if making navbar: Array.from(document.querySelectorAll('nav-item'))
-  // <nav-bar> 
-  //    <nav-item>
-  //    </nav-item>
-  // </nav-bar>
-   

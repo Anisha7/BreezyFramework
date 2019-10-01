@@ -33,8 +33,11 @@
         }
 
         if (this._logo == true) {
-          this._textEl.style.margin = 0;
-          this._textEl.style.color = LightenDarkenColor("#fAA275", 60);
+          console.log("HELLO")
+          this._textEl.style.margin = '0px';
+          // fix because lighten darken doesn't exist
+          this._textEl.style.color = "black";
+          // this._textEl.style.color = LightenDarkenColor("#fAA275", 60);
         }
         
       }
@@ -52,9 +55,12 @@
                 break
             case 'logo':
                 this._logo = newValue.toLowerCase()  == 'true'
+                const old = this._textEl
                 const text = this._textEl.innerHTML
                 this._textEl =  this._logo ? document.createElement('h1') : this._textEl
-                this._textEl = text
+                this._textEl.innerHTML = text
+                this._navItemEl.replaceChild(this._textEl, old)
+                this.render()
                 break
         }
       }
