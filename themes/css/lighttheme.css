@@ -23,20 +23,20 @@ h6 {
 }
 
 :root {
-  --theme-text-color-i: black;
-  --theme-text-color-i: #1a1a1a;
-  --theme-text-color-i: #333333;
-  --theme-text-color-i: #4d4d4d;
-  --theme-text-color-i: #666666;
-  --theme-text-color-i: gray;
-  --theme-text-color-i: #999999;
-  --theme-color-light-i: #fae1de;
-  --theme-color-light-i: #f3b9b2;
-  --theme-color-light-i: #ed9085;
-  --theme-color-light-i: #e66859;
-  --theme-color-light-i: #df402d;
-  --theme-color-light-i: #bc2e1d;
-  --theme-color-light-i: #902316;
+  --theme-text-color-0: black;
+  --theme-text-color-1: #1a1a1a;
+  --theme-text-color-2: #333333;
+  --theme-text-color-3: #4d4d4d;
+  --theme-text-color-4: #666666;
+  --theme-text-color-5: gray;
+  --theme-text-color-6: #999999;
+  --theme-color-light-0: #fae1de;
+  --theme-color-light-1: #f3b9b2;
+  --theme-color-light-2: #ed9085;
+  --theme-color-light-3: #e66859;
+  --theme-color-light-4: #df402d;
+  --theme-color-light-5: #bc2e1d;
+  --theme-color-light-6: #902316;
   --theme-text-color: black;
   --theme-color-light: #FAE1DE;
   --theme-color-lighter: #fdf5f4;

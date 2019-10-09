@@ -13,11 +13,11 @@ $heading-font-family: Verdana;
 }
 :root {
     @for $i from 0 through 6 {
-        --theme-text-color-#{i} : #{lighten($theme-text-color, 10% * $i)};
+        --theme-text-color-#{$i} : #{lighten($theme-text-color, 10% * $i)};
     };
     
     @for $i from 0 through 6 {
-        --theme-color-light-#{i}: #{darken($theme-color-light, 10% * $i)};
+        --theme-color-light-#{$i}: #{darken($theme-color-light, 10% * $i)};
     };
 
     --theme-text-color: #{$theme-text-color};
