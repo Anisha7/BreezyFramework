@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font-family);
 }
 
+h5, h6 {
+    font-size: 16px;
+}
+
 // TODO: prevent size degrading after h4
 
 // body text
