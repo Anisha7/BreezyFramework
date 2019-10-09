@@ -3,15 +3,46 @@
     <title>Breezy Navbars</title>
     <link rel="stylesheet" type="text/css" id="theme" href="../../themes/css/lighttheme.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/css/typography.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/css/forms.css" />
   </head>
   <body>
+      <div class="content-box">
         <p><a href='../../index.html'>Home</a></p>
-        <form>
-            <label for="name">Enter your name: </label>
-            <input type="text" name="name" id="name" required>
+        <h3>Use a div with class="form" with input elements 
+          or button elements inside it.</h3>
+        <div class="form">
+            <input  ref="firstName"
+                    name="firstName" 
+                    placeholder="First name" />
+            <input  ref="lastName"
+                    name="lastName" 
+                    placeholder="Last name" 
+                    />
+            <input  ref="email"
+                    name="email" 
+                    placeholder="Email" 
+                    type="email" />
+            <input  ref="age"
+                    name="age" 
+                    placeholder="Age" 
+                    type="number" />
+            
+            <button> SUBMIT </button>
+        </div>
+        </div>
 
-            <label for="email">Enter your email: </label>
-            <input type="text" name="email" id="email" required>
-        </form>
+        <!-- button
+          input[text], input[email], input[password]
+          input[radio], input[checkbox]
+          textarea
+
+          stretch:
+          input[file]
+          input[search]
+          input[color]
+          input[date]
+          input[image]
+          https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+        -->
   </body>
 </html>

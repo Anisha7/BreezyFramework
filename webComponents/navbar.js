@@ -1,4 +1,7 @@
 
+
+
+
 (function() {
     // Make a new Component
     // Choose an element to extend, usually HTMLElement
@@ -35,8 +38,8 @@
         this._navEl.style.alignItems = 'center';
         this._navEl.style.backgroundColor = this._color;
         this._navEl.style.alignItems = 'baseline';
-        this._navEl.style.borderRadius = this._color; // TODO: lighten 20%
-        this._navEl.style.color = "red";
+        this._navEl.style.borderRadius = '15px'; // TODO: lighten 20%
+        this._navEl.style.color = "black";
         // use hsl(hue, saturation, lightness)?
         // ex. hsl(${i*step}, 100%, 50%) would create a rainbow in a for loop
         // this._navEl.style.color = LightenDarkenColor(this._color, 20);
